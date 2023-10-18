@@ -1,5 +1,6 @@
 import Image from 'next/image'
 
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
@@ -61,6 +62,15 @@ export default function Home() {
             Disponible
           </p>
         </a>
+      </div>
+      <div className="mb-32 grid bg-slate-600 text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-1 lg:text-left">
+       <select className="bg-slate-600">
+       <option className={`mb-3 bg-slate-600 text-2xl font-semibold`} value="Mesa 1">Mesa 1</option>
+       <option className={`mb-3 bg-slate-600 text-2xl font-semibold`} value="Mesa 2">Mesa 2</option>
+       <option className={`mb-3 bg-slate-600 text-2xl font-semibold`} value="Mesa 3">Mesa 3</option>
+       <option className={`mb-3 bg-slate-600 text-2xl font-semibold`} value="Mesa 4">Mesa 4</option>
+       </select>
+
       </div>
     </main>
   )
